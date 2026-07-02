@@ -30,7 +30,13 @@
 
 
 ## How to Run the Project
+Follow these steps to run the project.
 
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/Decsika-tech/3-Tier-Architecture-Serverless-in-AWS-Cloud.git
+```
 
 ## Screenshot
 
