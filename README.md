@@ -37,7 +37,7 @@ Follow these steps to run the project.
 ```bash
 git clone https://github.com/Decsika-tech/Production-Grade-DevSecOps-CI-CD-Pipeline.git
 ```
-### Step 2: Create an AWS EC2 Instance
+### Step 2: Create an AWS EC2 Instance in AWS console
 - Launch an Ubuntu 24 EC2 instance (t2.large or m7i-flex.large).
 - Allocate 50 GB storage.
 - Attach an IAM role with Administrator access.
@@ -53,23 +53,53 @@ sudo -i
 
 ### Step 4: Install Required Tools
 Install the following tools on the EC2 instance:
-
+-Jenkins
 - Docker
-- Jenkins
 - Java
+- trivy
 - SonarQube 
 - AWS CLI
 - kubectl
 - Terraform
 
-### Step 4: Configure Jenkins Jobs
+### 4. Create the EKS Cluster
+- Configure Terraform.
+- Create the Amazon EKS cluster and worker nodes.
 
+### 5. Configure Jenkins
 Create two Jenkins pipeline jobs:
+1. EKS Provisioning Job
+2. Grocery Application Deployment Job
 
-1. **EKS Job** – Creates the Amazon EKS cluster.
-2. **Grocery Job** – Builds and deploys the Grocery(E-commerce) application.
+Install the required Jenkins plugins:
+- SonarQube Scanner
+- NodeJS
+- OWASP Dependency Check
+- Docker Plugins
+- Kubernetes Plugins
 
+### 6. Configure Integrations
+- Connect SonarQube to Jenkins.
+- Add Docker Hub credentials.
+- Add GitHub token.
+- Configure Kubernetes credentials.
 
+### 7. Run the CI/CD Pipeline
+Push the application code to GitHub. Jenkins automatically:
+- Performs code quality analysis using SonarQube
+- Installs dependencies (`npm install`)
+- Runs security scans (OWASP and Trivy)
+- Builds the Docker image
+- Pushes the image to Docker Hub
+- Updates Kubernetes manifests in GitHub
+
+### 8. Deploy with ArgoCD
+- Install ArgoCD on Amazon EKS.
+- Connect the Kubernetes manifest repository.
+- Enable automatic synchronization.
+
+### 8. Access the Application
+ArgoCD deploys the application to Amazon EKS automatically. Open the LoadBalancer URL in your browser to access the Tetris application.
 
 ## Screenshot
 
