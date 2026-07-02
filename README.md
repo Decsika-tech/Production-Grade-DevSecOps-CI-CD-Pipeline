@@ -102,7 +102,7 @@ Push the application code to GitHub. Jenkins automatically:
 ArgoCD deploys the application to Amazon EKS automatically. Open the LoadBalancer URL in your browser to access the Tetris application.
 
 ## Screenshot
-
+![Production-Grade-DevSecOps-CI-CD-Pipeline](argocd-screenshot-after manifest file trigger.png)
 
 ## Contributing
 Pull requests are welcome! If you find any issues, feel free to open an issue.
