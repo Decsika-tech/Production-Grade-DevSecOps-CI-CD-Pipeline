@@ -27,7 +27,82 @@
 - GitHub
 
 ## Folder Structure
+## 📁 Folder Structure
 
+```text
+Decsika-tech/
+├── EKS_TERRAFORM/   #Terraform files for provisioning the Amazon EKS cluster and worker nodes.
+│   ├── backend.tf
+│   ├── main.tf
+│   └── provider.tf
+│
+├── Jenkins-CICD/    #Jenkins pipeline, Terraform files, website files, and deployment scripts.
+│   ├── Jenkinsfile
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── provider.tf
+│   ├── s3.tf
+│   ├── variables.tf
+│   ├── website.sh
+│   ├── index.html
+│   ├── error.html
+│   ├── script.js
+│   └── style.css
+│
+├── public/           #Static assets used by the application.
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+│
+├── src/
+│   ├── components/   #React application source code and components.
+│   │   ├── CartModal.jsx
+│   │   ├── CategoryCard.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── MobileMenu.jsx
+│   │   ├── ProductCard.jsx
+│   │   ├── ProductModal.jsx
+│   │   ├── ScrollToTop.jsx
+│   │   └── ThemeToggle.jsx
+│   │
+│   ├── context/      
+│   │   ├── CartContext.jsx
+│   │   └── ThemeContext.jsx
+│   │
+│   ├── data/
+│   │   └── products.js
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Shop.jsx
+│   │   └── NotFound.jsx
+│   │
+│   ├── styles/
+│   │   └── index.css
+│   │
+│   ├── App.jsx
+│   ├── App.test.js
+│   ├── index.jsx
+│   ├── logo.svg
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+│
+├── Dockerfile       #Docker configuration for building the application image.
+├── deployment-service.yml   #Kubernetes Deployment and Service manifests.
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── tailwind.config.js
+├── postcss.config.js
+├── eslint.config.js
+├── .gitignore
+├── about
+```
 
 ## How to Run the Project
 Follow these steps to run the project.
