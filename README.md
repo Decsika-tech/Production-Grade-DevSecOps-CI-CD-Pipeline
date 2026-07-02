@@ -25,6 +25,8 @@
 - Trivy (Image Scan)
 - OWASP Dependency Check
 - GitHub
+- Grafana
+- Promotheus
 
 ## Folder Structure
 ## 📁 Folder Structure
