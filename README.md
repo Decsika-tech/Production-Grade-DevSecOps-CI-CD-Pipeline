@@ -1,4 +1,4 @@
-# DevSecOps E-Commerce (AWS EKS + GitOps)
+# Production-Grade-DevSecOps-CI-CD-Pipeline
  This project demonstrates an end-to-end DevSecOps pipeline for deploying a secure E-commerce application using CI/CD, containerization, and Kubernetes on AWS.
 
 ## Features 
