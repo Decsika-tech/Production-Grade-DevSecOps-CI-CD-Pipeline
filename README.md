@@ -107,7 +107,7 @@ ArgoCD deploys the application to Amazon EKS automatically. Open the LoadBalance
 
 ## Screenshot
 ### Grocery website version-1 
-![Production-Grade-DevSecOps-CI-CD-Pipeline](websitev-1.png)
+![Production-Grade-DevSecOps-CI-CD-Pipeline](website v-1.png)
 
 ### ArgoCD triggered after manifest file update
 ![Production-Grade-DevSecOps-CI-CD-Pipeline](argocd-screenshot.png)
