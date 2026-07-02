@@ -12,7 +12,7 @@
 - Fully automated build → scan → deploy flow
 
 ## Architecture Diagram
-
+![Production-Grade-DevSecOps-CI-CD-Pipeline](architecture.png)
 
 ## Technologies used
 - AWS (EKS, EC2, IAM)
