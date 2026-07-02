@@ -98,12 +98,21 @@ Push the application code to GitHub. Jenkins automatically:
 - Connect the Kubernetes manifest repository.
 - Enable automatic synchronization.
 
-### 8. Access the Application
-ArgoCD deploys the application to Amazon EKS automatically. Open the LoadBalancer URL in your browser to access the Tetris application.
+### 9. Monitor the Application
+- Install Prometheus to collect metrics from the EKS cluster and application.
+- Configure Grafana dashboards to visualize metrics and monitor application health.
+
+### 10. Access the Application
+ArgoCD deploys the application to Amazon EKS automatically. Open the LoadBalancer URL in your browser to access the application.
 
 ## Screenshot
-###ArgoCD triggered after manifest file update
+### Grocery website version-1 
+
+
+### ArgoCD triggered after manifest file update
 ![Production-Grade-DevSecOps-CI-CD-Pipeline](argocd-screenshot.png)
+
+### Grocery website version-2
 
 ## Contributing
 Pull requests are welcome! If you find any issues, feel free to open an issue.
